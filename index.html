@@ -8,11 +8,13 @@
 </head>
 <body>
     <div id="nav-section">
-        <nav class="flex justify-between items-center w-[92%] bg-red-400 mx-auto">
-            <div id="logo">
+        <nav class="flex justify-around items-center   mx-auto">
+            <div class="flex flex-row items-center gap-6">
                 <img class="w-16" src="images/salesforce_icon.png" alt="Salesfore logo">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+
             </div>
-            <div class="md:static absolute bg-black md:min-h-fit min-h-[60vh] left-0 top-[9%] md:w-auto w-full flex items-center px-5">
+            <div class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
                 <ul class="flex md:flex-row md:items-center flex-col md:gap-[4vw] gap-8">
                     <li><a class="font-bold text-blue-900 hover:text-blue-400" href="">Products</a></li>
                     <li><a class="font-bold text-blue-900 hover:text-blue-400" href="">Industries</a></li>
@@ -24,7 +26,14 @@
                 </ul>
 
             </div>
-            <div id="nav-other">
+            <div class="nav-other flex flex-row items-center w-1/5 justify-between ">
+                <ion-icon name="search-outline" class="text-xl"></ion-icon>
+                <ion-icon name="globe-outline" class="text-xl"></ion-icon>
+                
+                <div class="flex flex-row">
+                    <ion-icon name="person" class="text-xl"></ion-icon>
+                    <p>login</p>
+                </div>
                 <button class="bg-[green] text-white px-5 py-2 rounded-lg hover:bg-black" >Try for free</button> 
             </div>
         </nav>
@@ -116,6 +125,22 @@
     <div class="sub-heading">
         <h2>Try Salesforce for free. No credit card required, no software to install.</h2>
     </div>
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+    const navLinks = document.querySelector(".nav-links")
+    function onToggleMenu(e){
+        
+        e.name = e.name === "menu" ? "close" : "menu"
+        navLinks.classList.toggle("top-[9%]")
+      
+    }
+
+
+</script>
 
 </body>
 </html>
