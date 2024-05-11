@@ -42,7 +42,7 @@
 
 
 
-    <div id="section1" class="flex flex-row justify-around border border-black items-center py-5">
+    <div id="section1" class="flex flex-row justify-around items-center py-5">
         <div id="left-part" class="" >
             <!-- below 2 sects is currently a cless instead of a id incase we repeat -->
             <div id="heading" class="text-5xl text-blue-900 w-[50%]">
@@ -65,42 +65,53 @@
             <iframe class="rounded-lg" width="560" height="315" src="https://www.youtube.com/embed/uzKjRCfq-k4?si=ftm6SIGPfQ9qR2xx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
     </div>
-    <div class="sub-heading">
-        <h2>What's new at Salesforce?</h2>
+    <div class="sub-heading text-center">
+        <h2 class="text-5xl text-blue-900" >What's new at Salesforce?</h2>
     </div>
-    <div id="section2">
-        <div class="card">
-            <div class="pic">
-                
+    <div class="flex items-center container min-h-screen mx-auto justify-center text-center"> 
+    <!-- min-h-screen may not be nessary  -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-xl shadow-lg">
+                <div class="p-5 flex flex-col">
+                <div class="rounded-xl overflow-hidden">
+                    <img src="images/sect2_pic1.webp" alt="picture of a desktop in a forest">
+                </div>
+                <div class="text-2xl md:text-3xl font-medium mt-3">
+                <p>Gartner named Salesforce a Leader in Customer Data Platforms.</p>
+                </div>
+                <div class="link">
+                <p><a href="">Read the report</a></p>
+                </div>
+                </div>
             </div>
-            <div class="title">
-            <p>Gartner named Salesforce a Leader in Customer Data Platforms.</p>
+            <div class="rounded-xl shadow-lg">
+                <div class="p-5 flex flex-col">
+                <div class="rounded-xl overflow-hidden">
+                    <img src="images/sect2_pic2.webp" alt="picture of a man and woman">
+                </div>
+                <div class="text-2xl md:text-3xl font-medium mt-3">
+                <p>Join the Salesblazer movement.</p>
+                </div>
+                <div class="link">
+                <p><a href="">Get started</a></p>
+                </div>
+                </div>
             </div>
-            <div class="link">
-            <p><a href="">Read the report</a></p>
+            <div class="rounded-xl shadow-lg">
+                <div class="p-5 flex flex-col">
+                <div class="rounded-xl overflow-hidden">
+                    <img src="images/sect2_pic3.webp" alt="picture of desktop with tabs poping out">
+                </div>
+                <div class="text-2xl md:text-3xl font-medium mt-3">
+                Check out Pro Suite, our new all-in-one CRM that grows with your business.
+                </div>
+                <div class="link">
+                <p><a href="">Explore now</a></p>
+                </div>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="pic">
-                
-            </div>
-            <div class="title">
-            <p>Join the Salesblazer movement.</p>
-            </div>
-            <div class="link">
-            <p><a href="">Get started</a></p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="pic">
-                
-            </div>
-            <div class="title">
-            Check out Pro Suite, our new all-in-one CRM that grows with your business.
-            </div>
-            <div class="link">
-            <p><a href="">Explore now</a></p>
-            </div>
+        
         </div>
     </div>
     <div class="sub-heading">
